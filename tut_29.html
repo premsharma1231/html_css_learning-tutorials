@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Queries</title>
+    <style>
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            display: none;
+        }
+
+        /* In this media queri when the display size will be 0px to 300px the box1 will be visible this media query is same as if-else conditions in other programming languages , as i want to tell you that what ever code you write in this @media tag and when the condition will matches the code will be shown as the conditions */
+        @media only screen and (max-width:300px) {
+            #box1 {
+                display: block;
+                background-color: cadetblue;
+                font-family: cursive;
+            }
+        }
+
+        /* Here the condition is for when the display matches the size of the condition as 301px to 500px, then the code will be change as the written codes */
+        @media only screen and (min-width:301px) and (max-width:500px) {
+            #box2 {
+                display: block;
+                background-color: chocolate;
+                font-family: cursive;
+            }
+        }
+
+        /* Here the condition is for when the display matches the size of the condition as 501px to 800px, then the code will be change as the written codes */
+
+        @media only screen and(min-width:501px) and (max-width:800px) {
+            #box3 {
+                display: block;
+                /* text-align: center; */
+                background-color: rgb(30, 123, 210);
+                font-family: cursive;
+            }
+        }
+
+        /* Here the condition is for when the display matches the size of the condition as more than 801 px , then the code will be change as the written codes */
+
+        @media (min-width:801px) {
+            #box4 {
+                display: block;
+                /* text-align: center; */
+                background-color: rgb(144, 30, 210);
+                font-family: cursive;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Mai ek i-phone hoon</div>
+    <div class="box" id="box2">Mai ek tablet hoon</div>
+    <div class="box" id="box3">Mai ek Desktop computer hoon</div>
+    <div class="box" id="box4">Mai ek wide-screen computer hoon</div>
+</body>
+
+</html>

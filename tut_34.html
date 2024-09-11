@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow and Text-Shadow</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            /* flex-direction: column; */
+        }
+
+        .card {
+            /* Here is the syntax for box-shadow: px px px color; 
+            Here the 1st and 2nd is use to give the shadow height and widht and the 3rd px is used to set the box-shadow blurness and here there are two types which is is used in box-shadow are outset and inset and one more thing is spread ness where we can  make the shadows more spread-ness*/
+            margin: 25px 12px;
+            padding: 12px 25px;
+            text-align: center;
+            box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.726);
+            background-color: chocolate;
+            transition-property: background-color;
+            transition-duration: 0.51s;
+            border-radius: 12px;
+            /* border: 5px solid black; */
+            /* align-items: center; */
+            /* text-shadow: 12px 12px 12px green; */
+            /* Here the syntax of box-shadow and text-shadow both are same */
+            /* Syntax for text-shadow: inset x-axis inset y-axis blur spread color */
+            /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+        }
+
+        .card:hover{
+            background-color: burlywood;
+        }
+
+        .card h1 {
+            color: antiquewhite;
+            text-shadow: 2px 2px 4px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deserunt sint, aspernatur inventore
+                pariatur qui ipsa dignissimos quasi deleniti amet optio rerum facere natus officiis aliquam rem
+                doloremque ipsam aperiam quis laborum consequuntur voluptate?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card-2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deserunt sint, aspernatur inventore
+                pariatur qui ipsa dignissimos quasi deleniti amet optio rerum facere natus officiis aliquam rem
+                doloremque ipsam aperiam quis laborum consequuntur voluptate?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card-3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deserunt sint, aspernatur inventore
+                pariatur qui ipsa dignissimos quasi deleniti amet optio rerum facere natus officiis aliquam rem
+                doloremque ipsam aperiam quis laborum consequuntur voluptate?</p>
+        </div>
+    </div>
+</body>
+
+</html>

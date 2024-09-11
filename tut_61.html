@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and ClearTimeOut</title>
+    <style>
+        *::selection{
+            color: black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container" style="text-align: center; font-size: 5rem; font-family: monospace; background-color: black; color: white;" >
+        Ye hai sabse latest time
+        <h1 id="time" style="font-size: 1.5rem;"></h1>
+    </div>
+    <script>
+        console.log("This is Turorial 61 of WebDevelopmentCourse");
+        // setTimeout --> Allows us to run the function once after the interval of time
+        // clearInterval --> Allows us to run the function repeatedly after the interval of time
+
+        // function greet(){
+        //     console.log('This is an Odd and Even Program');
+        //     let i = parseFloat(prompt("Enter The Number To Find The ODD and EVEN Number"));
+        //     even = i % 2;
+        //     if ( i == 0){
+        //         console.log(`Sorry You Entered ZERO - ${i}`);
+        //     }
+        //     else if (even == 0) {
+        //         console.log(`${i} is EVEN Number`);
+        //     } 
+        //     else {
+        //         console.log(`${i} is ODD Number`);
+        //     }
+        // }
+
+        // Here till now we only use this setTimeout function and this function will only fun once it will not run repeatadely
+
+        // This is the function to check the setTimeout and calling the function and giving it the time to run the program 
+        // setTimeout(greet , 2000);
+
+        // Now we will learn setInterval function to perform the code again and after ending each time as a loop with no limit
+        // function greet(){
+        //     console.log("Hello , Good Morning");
+        // }
+        // setInterval(greet , 1000 , 'prem');
+        // As you can see after going on the browser that the code is running repeatedly and after every refresh it will restart the code
+
+
+        // Here we are making the function to print the current and latest time of india
+        function displayTime() {
+            time = new Date(); // Date function is used like this 
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime , 1000);
+    </script>
+</body>
+</html>

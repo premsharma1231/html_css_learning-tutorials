@@ -1,0 +1,49 @@
+<!-- In this video we learned about how to make the responsive website and we used new tags like 
+    em , rem , vh , vw -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website/Size Units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+            /* Here to make the website more responsive , here we applied the vw means the viewport-widht means which cover the whole google or website page */
+            /* And same as here the vh is used to take the 100% of the viewpage of the website or the google , as the full-form of vh is view-port height */
+            /* width: 100vw; */
+            width: 100%;
+            height: 100vh;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            text-decoration: none;
+            /* Here as you can see we applied the fint-size 3em here 3em means , 3 times of font-size written in main tag in .container */
+            /* font-size: 3em; */
+            /* When we give the em value in padding and margin , as you can see here that the padding contains the value of 3em means the , 3 times value of font-size as here the value of font-size is 30 so here the size of padding will be 90-px  */
+            /* padding: 3em; */
+            /* margin: 3em; */
+        }
+        #seacond{
+            text-decoration: none;
+            /* As here we use the new tag rem which is used to multiply the value with the size writen in html{font-size:15px;} as you see here the we give in html style sheet 25px where it multiplies three time of the value of the html */
+            /* Here , this tag is perfectly same as em tag as here we can also multiply the value of padding and margin  */
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first Heading</h1>
+        <h1 id="seacond">This is seacond Heading</h1>
+        <h1 id="third">This is third Heading</h1>
+    </div>
+</body>
+</html>

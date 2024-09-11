@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables / Custom Property</title>
+    <style>
+        /* Whenever we use the :root tag means we can use the root at whole project */
+        :root{
+            /* Here we used variables in css means defining the css property with variables where we can define the variables as given below */
+            --box-color: chocolate;
+            --border-color: 3px solid black;
+            --border-radius:12px;
+            --box-shadow: 2px 2px  4px black;
+            
+        }
+        
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 12px 12px;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+            /* border: var(--border-color); */
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

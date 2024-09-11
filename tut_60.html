@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        *::selection{
+            background-color: black;
+            color: white;
+        }
+        p{
+            font-family: monospace;
+        }
+        button{
+            padding: 10px 15px;
+            background-color: chocolate;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(154, 70, 10);
+        }
+        btnfor1{
+            padding: 20px;
+            font-size: 2rem;
+
+        }
+    </style>
+</head>
+<body>
+    Here we learn about all the event listners
+    <h1 style="font-family: monospace;" id="head">I will hide this here</h1>
+    <input type="text" id="namelikhenge">
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <button id="btnfor1" onclick="1">1</button>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis praesentium impedit et rerum nihil dolorem, natus illum, error culpa voluptatum cum maiores vel? Voluptatibus temporibus sint accusamus dignissimos possimus sit, quisquam atque a repellat? Repudiandae, veritatis? Asperiores quis fugiat nostrum veniam ad omnis delectus quasi commodi odio quae fuga, incidunt aliquid maiores quaerat voluptatem deserunt sint. Ratione incidunt ullam quae, itaque recusandae alias eos provident beatae. Quam officiis fugit repellat, ullam voluptatum necessitatibus culpa et vitae mollitia rem. Aut commodi ab exercitationem autem dolore cumque sit tempore provident accusamus. A molestias quod praesentium fuga voluptatibus labore vitae ut nisi officiis porro impedit, quisquam delectus laborum provident pariatur dolores. Facilis facere dolore mollitia iste soluta. Quaerat esse, officiis repellat et velit, cupiditate accusantium quasi facere sapiente doloremque neque, recusandae minus! Sint quod officiis distinctio consectetur itaque inventore nesciunt quae voluptate. Quam modi illo necessitatibus sit quis quos officiis doloremque aperiam, laboriosam fuga pariatur nihil numquam dicta, praesentium hic amet itaque veritatis laudantium voluptatibus repellat repellendus quibusdam accusantium. Atque vitae minima tempore eius ducimus, neque ullam quam exercitationem placeat eos? Ad hic, vel dignissimos reiciendis autem dolore sunt labore minima nemo voluptate. Nulla qui vitae, eius eligendi enim reiciendis doloremque similique aliquam?</p>
+
+    <script class="src">
+
+        // this is the simple program to perform the event listening in JavaScript 
+        // hear in html we made an head tag by giving it the id named head than as we learned before hear that 
+        // let head = document.getElementById('head');
+        // head.addEventListener('mouseover', function run(){
+        //     console.log("Now this mouse is inside the Heading");
+        // });
+        // head.addEventListener('mouseout', function run(){
+        //     console.log("Now this mouse is out-side the Heading");
+        // });
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run(){
+        //     console.log("Now this mouse is inside the paragraph");
+        // });
+        // para.addEventListener('mouseout', function run(){
+        //     console.log("Now this mouse is out-side the paragraph");
+        // });
+         function toggleHide(){
+             let btn = document.getElementById('btn');
+             let para = document.getElementById('para');
+             if (para.style.display != 'none') {
+                 para.style.display = 'none';
+             } else {
+                 para.style.display = 'block';
+             }
+         }
+        let namelikhenge = document.getElementById('namelikhenge');
+        let btnfor1 = document.getElementById('btnfor1');
+        btnfor1.addEventListener('click', function run(){
+            console.log(`1\n`);
+        });
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height , Weidht , Border and Background</title>
+    <style>
+        #firstPara{
+            background-color: aqua; /*This is used to change background color*/
+            height: fit-content; /*background height*/
+            width: fit-content; /*background widht*/
+            border: solid 5px pink; /* border , in solid form , size 5px , color pink*/
+            border-radius: 10px; /*border radius is used to make the circle at the border like as arcs*/
+        }
+        #seacondPara{
+            background-color: aqua;
+            height: fit-content;
+            width: fit-content;
+            border: 5px pink solid;
+            font-size: x-large; /*this is an font size in pixels defined*/
+            font-family: Arial, Helvetica, sans-serif; /*this is the font style in different methods already defined in software*/
+            border-radius: 12px; /*the border radius is given in 12px*/
+            background-position: center center;
+        }
+        #my1Head{
+            background-color: chocolate;
+            height: 500px;
+            width: 1500px;
+            /* border-top: 5px solid cornflowerblue;
+            border-left: 5px solid cyan;
+            border-right: 5px solid rgb(66, 48, 0); */
+            border: 5px solid black;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px; 
+            background-image: url('https://source.unsplash.com/featured?technology'); /*In this the image is used to added at the backgrounnd of the heading*/
+            background-position: center center ; /*this is the position for the backgroud image in the heading */
+            background-repeat: repeat-x; /*When you want to repeat the image inserted in the heading in x-axis*/
+            background-repeat: repeat-y; /*when you want to repeat the image inserted in the heading in y-axis*/
+            background-repeat: no-repeat; /*when you don't want any repetation in image inserted in headings*/
+        }
+        #my2Head{
+            background-color: chocolate;
+            height: 500px;
+            width: 1500px;
+            /* border-top: 5px solid cornflowerblue;
+            border-left: 5px solid cyan;
+            border-right: 5px solid rgb(66, 48, 0); */
+            border: 5px solid black;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+            background-image: url('https://source.unsplash.com/featured?technology');
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="my1Head">This is an Heading</h1>
+    <p id="firstPara">This is an Paragraph</p>
+    <h1 id="my2Head">This is my seacond Heading</h1>
+    <p id="seacondPara">This is my seacond paragraph</p>
+</body>
+</html>

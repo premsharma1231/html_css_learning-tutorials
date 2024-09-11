@@ -1,0 +1,53 @@
+<!-- Visibility hidden will hide the element but will show the empty spaces -->
+<!-- But the display:none; will also hide the element and code but with the empty spaces and will not show the empty space and the element will be perfectly hidden -->
+ <!-- Whenever we used to make the visibility hidden the code , box or container made that will be hidden than this will take all the space and after making the visibility hidden and the box or class or id will hide itself and make that space empty  -->
+ <!-- visibility: hidden;  --> 
+ <!-- This is the display none element so whenever we used to give display none to any code or element  -->
+<!-- then the display will be none for that element of for that particular code then the code will be hidden or none and without any empty spaces and the code is perfectly 100% hidden without any empty-spaces so this is mostly used in all the websites  -->
+<!-- display: none;  --> 
+<!-- When we have to make or use the z-index in elements the z-index will only work on position:relative;
+So whenever we want to use the z-index in a ny particular situation at that time the situation should be of position:relative; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+        }
+        #box1{
+            position: relative;
+            top: 49px;
+            z-index: 35;
+            background-color: red;
+        }
+        #box2{
+            position: relative;
+            top: 14px;
+            z-index: 45;
+            background-color: blue;
+        }
+        #box3{
+            /* position: relative;
+            top: 100px; */
+            z-index: -15;
+            background-color: pink;
+        }
+        #box4{
+            /* position: relative;
+            top: 150px; */
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

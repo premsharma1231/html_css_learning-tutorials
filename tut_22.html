@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more Designing</title>
+    <style>
+        .container{
+            border: 2px solid rebeccapurple;
+            background-color: rgb(130, 236, 130);
+            margin: 35px auto;
+            padding: 35px;
+            width: 622px;
+        }
+        h1{
+            font-style: italic;
+            font-style: bold;
+            font-size: xx-large;
+        }
+        .btnn{
+            background-color: darkolivegreen;
+            padding: 5px;
+            margin-left: 420px;
+            margin-top: 40px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-weight: bold;
+            
+        }
+        .btn{
+            background-color: hsl(82, 39%, 30%);
+            padding: 5px;
+            /* margin-left: 100px; */
+            margin-top: 40px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 5px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-weight: bold;
+            
+        }
+                    /* let me tell you the meaning of hover , here hover tag is used to style any button , here whenever the cursor is used to touch the button and it will design the button in different color*/
+            /* This all are the Pseudo selectors */
+                    button:hover{
+                color: rgb(255, 255, 255);
+                background-color: hsl(82, 46%, 20%);
+             }
+            a:hover{
+                color: rgb(255, 255, 255);
+                background-color: hsl(82, 46%, 20%);
+            }
+                    /* this is the visited tag it is used to change the color of the button and links whenever we already clicked and saw the thing after one time view the color of the link will be changed at the time and putting the cursor on it*/  
+            /* a:visited{  
+                /* background-color: rgb(147, 156, 165); */
+             
+            /* let me tell you about the active tag in the button styling so in the active tag so if i used this tag for button so whenever i click on button than the button will be black in color*/
+            a:active{  
+                background-color: rgb(0, 0, 0);
+            }
+            h1:hover{
+                color: rgb(38, 59, 16);
+            }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h1><u>This is my Heading</u></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A atque omnis, nulla, quis nemo, excepturi repellendus rerum reiciendis provident dolorem pariatur aut aliquid iusto quae aperiam officia! Accusantium nam minus quisquam, eligendi obcaecati aperiam vel et, dignissimos alias quam beatae?</p>
+        <a href="https://google.com" class="btnn" target="_blank">Read more</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+</html>

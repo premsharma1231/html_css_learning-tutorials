@@ -1,0 +1,125 @@
+<!-- In this tutorial we learned about animations as making the animations and inserting them in websites are so easy 
+so firstly we have to give the name to animation as 
+animation:name;
+Then you have to decide how long time the animation should run 8 sec longer than you will use
+animation-duration: ex:3s(3-seaconds) ;  for more knowledge you should check the code writeen below -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animations and Key-Frame</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: black;
+            padding: 0;
+        }
+        .box{
+            position: relative;
+            margin: 0px 0px;
+            text-align: center ;
+            background-color: rgb(245, 189, 208);
+            border: 2px solid none;
+            border-radius: 2px;
+            width: 50px;
+            height: 50px;
+            animation-name: prem-2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            /* animation-delay:; */
+        }
+
+        .box-2{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border: none;
+            border-radius: 0px;
+            background-color: rgb(191, 191, 255);
+            animation: prem;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+        }
+
+
+        @keyframes prem-2 {
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 100px;
+                top: 0px;
+            }
+            50%{
+                top: 100px;
+                left: 100px;
+            }
+            75%{
+                left: 0px;
+                top: 100px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+            
+        }
+        @keyframes prem {
+            0%{
+                left: 50px;
+                top: 50px;
+            }
+            25%{
+                left: 75px;
+                top: 50px;
+            }
+            50%{
+                top: 75px;
+                left: 75px;
+            }
+            75%{
+                left: 50px;
+                top: 75px;
+            }
+            100%{
+                top: 50px;
+                left: 50px;
+            }
+            
+        }
+        
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <!-- How Are You!! -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-2" id="box-2">
+
+        </div>
+    <!-- </div>
+    <div class="container">
+        <div class="box" id="box-3">
+            Kaise ho tum??
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box-4">
+            Abhi tak virgin ho kya??
+        </div> -->
+    </div>
+    <!-- <div class="video">
+        <video src="" controls></video>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/sQ_E1_qUSbU" title="Kabir Singh | Tujhe Kitna Chahne Lage (Reprise) | Mayank Sharma | Arijit Singh | Yash Music ||" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div> -->
+</body>
+</html>

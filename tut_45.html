@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Media Queries</title>
+    <style>
+        *{
+            list-style: none;
+        }
+      
+        .navigation{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        /* .navigation :nth-child(2){
+            justify-content: flex-end;
+        } */
+        .head{
+            justify-content: flex-start;
+        }
+        .lists{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+        .lists li,.btn{
+            margin: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="head">
+            <h1>Anshu</h1>
+        </div>
+        
+            <div class="lists">
+                <li>Anshu</li>
+                <li>Anshu</li>
+                <li>Anshu</li>
+                <li>Anshu</li>
+                <li>Anshu</li>
+                <button class="btn">Submit</button>
+                <button class="btn">Reset</button>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!-- This is the tag where it is used to select or target the css in any target the attribute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            width: 400px;
+            height: 400px;
+            margin: auto; 
+
+            /* border: 2px solid black; */
+        }
+         
+        /* Where in this code we targeted the attribute or input tag where in this tag the targeted tag is input whose type is text */
+         input[type='text']{
+            margin: 12px;
+            padding: 5px; 
+            border: 2px solid blue;
+            text-align: center;
+        }
+
+        /* In this tag i targe or select the link whose target is already set */
+        a[target]{ 
+            text-decoration: none; 
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: xx-large;
+        }
+
+/* 
+        Here i only targeted the link which means a tag which contains the target=_self , so for this tag i made some other property to execute */
+        a[target='_self']{ 
+            text-decoration: none; 
+            display: block;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            font-size: xx-large;
+        }
+       
+        
+        input[type='email']{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: cadetblue;
+            border: 2px solid red;
+        }  
+
+
+        /* Here i selected the n-th child selector in css here we selected a single particular li as 6th number of li in ul so this all properties are applied on li:nth-child(6) , where the properites applied for 6th number of li is = list in ul = un-ordered list*/
+        /* This will apply css for 6th child */
+        /* li:nth-child(3){
+            color: cadetblue;
+            font-size: larger;
+        }
+         li:nth-child(2n+0){
+            color: rgb(255, 0, 0);
+            font-size: larger;
+        }
+         li:nth-child(3n+0){
+            color: rgb(255, 0, 0);
+            font-size: larger;
+        } */
+        /* li:nth-child(10){
+            color: cadetblue;
+            font-size: larger;
+        }  */
+
+        /* Here the CSS will apply on every even number */
+        /* li:nth-child(even){
+            background-color: cadetblue;
+            color: black;
+        } */
+        /* Here the CSS will apply on every odd number */
+        li:nth-child(odd){
+            background-color: cadetblue;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+           <a href="http://google.com" target="_blank">Go to Google</a>
+           <a href="http://facebook.com" target="_self">Go to Facebook</a>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="email" placeholder="Enter Your E-mail">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item-1</li>
+            <li class="item" id="item2">Item-2</li>
+            <li class="item" id="item3">Item-3</li>
+            <li class="item" id="item4">Item-4</li>
+            <li class="item" id="item5">Item-5</li>
+            <li class="item" id="item6">Item-6</li>
+            <li class="item" id="item7">Item-7</li>
+            <li class="item" id="item8">Item-8</li>
+            <li class="item" id="item9">Item-9</li>
+            <li class="item" id="item10">Item-10</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!-- The syntax for margin and padding is for TOP , BOTTOM , LEFT , RIGHT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+            .navbar{
+                background-color: gold;
+                font-family:Barlow Semi Condensed,sans-serif;
+                border-radius: 20px;
+                /* border: 1px solid; */
+            }
+            .navbar ul{
+               overflow: auto;
+            }
+            .navbar li{
+                float: left;
+                /* list style means the style representer of the unordered list */
+                list-style: none;
+                margin: 6px 6px 5px 5px;
+                /* border: 1px solid rgb(121, 103, 0); */
+                /* width: 100px; */
+                margin-top: 18px;
+                margin-bottom: 90px;
+            }
+            .navbar a{
+                padding: 5px 5px;
+                text-decoration: none;
+                color: rgb(73, 30, 0);
+                font-size: 25px;
+                border: 2px solid black;
+                border-radius: 6px;
+            }
+            a:hover{
+                color: rgb(51, 21, 0);
+                background-color:  rgb(107, 91, 1);
+                /* border: 2px solid rgb(121, 103, 0);*/
+                border: 1px solid rgb(121, 103, 0);
+                text-decoration: none;
+            }
+             /* .search{
+                float: right;
+                padding-top: 5.5px;
+                padding-bottom: 5.5px;
+                padding-right: 40px; 
+             } */
+            #Search{
+                /* padding-top: 5.5px;
+                padding-bottom: 5.5px;
+                padding-right: 10px; */
+                float:right;
+                padding-right: 35px;
+                margin-right:  55px;
+                background-color: rgb(255, 255, 255);
+                border: solid 2px black;
+            }
+            #Search:hover{
+                border: 2px solid;
+                background-color: rgb(244, 253, 117); ;
+            }
+            .navbar input{
+                padding: 5px 50px;
+                /* margin-right: 10px;
+                margin-left: 10px;
+                margin-top: 7px;
+                margin-bottom: 7px;
+                margin-bottom: 7px; */
+                border-radius: 35px;
+                width: 120px;
+                margin-top: 48px;
+                margin-bottom: 48px;
+                
+            }
+    </style>
+</head>
+<body>
+    <!-- This is the header tag where we used to make the navgation  -->
+    <header>
+        <!-- this is a nav tag which is the opening and closing tag for navigation bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://google.com" target="_blank">Home</a></li>
+                <li><a href="https://google.com" target="_blank">About</a></li>
+                <li><a href="https://google.com" target="_blank">Services</a></li>
+                <li><a href="https://google.com" target="_blank">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" class="search" id="Search" placeholder="tell me ??">
+                    <!-- placeholder means that the search box will blink the name search the website in the search box tag -->
+                </div>
+            </ul>
+        </nav> 
+    </header>
+</body>
+</html>

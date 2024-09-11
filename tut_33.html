@@ -1,0 +1,155 @@
+<!-- Here we learned about before and after pseudo selectors as here we added the image by using before and after pseudo selectors by using pseudo selectors as ::before and added the image to make the opacity of the image less to read the written words clearly -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Crimson+Text:ital@0;1&family=Handjet:wght@100&family=Tajawal:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Crimson+Text:ital@0;1&family=Gabarito:wght@600&family=Handjet:wght@100&family=Tajawal:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;  
+            padding: 0;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: 'Ubuntu', sans-serif;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        header::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: url('https://source.unsplash.com/random/1600x1200') no-repeat center center/cover;
+            opacity: 0.3;
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+       
+        
+        .navigation {
+            /* position: fixed; */
+            /* left: 25px; */
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+            justify-content: center;
+            /* text-align: center; */
+            /* position: fixed; */
+            /* align-items: center; */
+            /* border: 2px solid white; */
+        }
+        
+        ul {
+            padding: 10px 10px;
+        }
+        
+        li {
+            padding: 0px 10px;
+            font-size: 20px;
+            /* font-weight: bold; */
+            list-style: none;
+            
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            /* border: 2px solid white; */
+        }
+        
+        .heading {
+            margin-top: 70px;
+            padding: 15px 50px;
+            text-align: center;
+            font-size: 40px ;
+            font-weight: bold;
+            /* border: 2px solid white; */
+        }
+        
+        .paragraph {
+            margin-top: 0;
+            padding: 10px 100px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            /* border: 2px solid white; */
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:hover{
+            color: chocolate;
+        }
+
+        /* nav a{
+            text-decoration: none;
+            padding: 12px 12px;
+        } */
+
+
+        /* .item{
+            border: 2px solid white;
+        } */
+        
+
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li class="item"><a href="https://google.com" target="_blank">Home</a> </li>
+                <li class="item"> <a href="https://google.com" target="_blank"> About-Us</a></li>
+                <li class="item"> <a href="https://google.com" target="_blank">Services</a> </li>
+                <li class="item"> <a href="https://google.com" target="_blank"> Contact-Us</a></li>
+            </ul>
+            <!-- <h1>
+                <label for="home"></label>
+                <a href="https://google.com" id="home" target="_blank">Home</a>
+                <select name="Home" id="home">
+                    <option value="home">Wyt</option>
+                    <option value="home">lorem</option>
+                    <option value="home">lorem</option>
+                </select>
+            </h1> -->
+            <!--             
+            <h1><a href="https://google.com" target="_blank">About-Us</a></h1>
+            <h1><a href="https://google.com" target="_blank">Services</a></h1>
+            <h1><a href="https://google.com" target="_blank">Contact-Us</a></h1> -->
+        </nav>
+    </header>
+    <section class="section">
+        <h1 class="heading">!..Welcome to Coding World..!</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint              quae     possimus, sequi illo
+            quia repellat placeat voluptatibus nihil nostrum, molestiae impedit alias temporibus adipisci pariatur ipsa
+            consequuntur harum, ipsam ut cum. Itaque, fugiat non!</p>
+    </section>
+</body>
+
+</html>

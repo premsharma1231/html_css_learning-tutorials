@@ -1,0 +1,112 @@
+<!-- Here we learned the flex-container and flex-items propeties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex-box tutorial.</title>
+        <style>
+            .container{
+                /* Initializes the container as a flex box after the display flex */
+                display: flex;
+                width: 100%;
+                height: 600px;
+                border: 2px solid black;
+                
+                
+                /* Flex properties for a Flex conatiner */
+                /* Default value of Flex-direction is ROW */
+                /* flex-direction: row; */
+                /* flex-direction: column; */
+                /* flex-direction: row-reverse; */
+                /* flex-direction: column-reverse;  */
+
+                
+                /* This is to set the website responsive ness at the time of making */
+                /* Its default value is nowrap */
+                /* flex-wrap: nowrap; */
+                /* When you want to set the wrap and the flex-direction at the same time then you have to use the flex-flow : (flow-direction) || (flow-wrap) */
+                /* flex-flow: row-reverse wrap; */
+
+                
+                /* In justify-content when you use to do the content center it will perfectly align the center from both of the sides to middle */
+                /* There is a different justify content is evenly which is used to distribute the content equal spaces from right and left side to the cotent */
+                /* Justify-content will justify the content in horizontal direction */
+                justify-content: center;
+                /* justify-content: space-evenly; */
+                /* justify-content: ; */
+                
+                
+                /* As align items center contents is used to make the contents center vertically */
+                /* There are more properties which align the items on top by using aling-items:start which is by defaultly and one more is aling-items:end; which is used to align the container items in end means in bottom */
+                /* align-items: center; */
+                /* align-items: end;/ *
+                /* align-items: start; */
+            }
+            .item{
+                background-color: tomato;
+                border: 2px solid black;
+                margin: 10px 20px;
+                width: 200px;
+                height: 200px;
+                border-radius: 5px;
+                /* padding: 12px ; */
+
+            }
+            #item-1{
+                /* Flex Properties for a flex-items */
+                /* padding: 5px auto; */
+                /* Higher the order , later it shows up in the container */
+                order: 1;
+                
+                
+                /* In Flex-grow when we add some value in it , it will react more larger than other-boxes at the time of expanding the responsive ness and always whenever it will get the chance to expand the responsive ness in the big-screen than it will react bigger */
+                /* flex-grow: 2; */
+
+                /* In Flex-shrink when we add some value in it , it will react more smaller at the time of shrinking the boxes as lesser the responsive ness */
+                /* flex-shrink: 2;  */
+            }
+            #item-2{
+                /* Flex Properties for a flex-items */
+                /* padding: 5px auto; */
+                /* Higher the order , later it show up in the container */
+
+                order: 0;
+
+                /* flex-grow: 3;
+                flex-shrink: 3; */
+
+                flex-basis: 150px;
+                /* When Flex-direction is set to row flex-basis: will control widht; */
+                /* When Flex-direction is set to column flex-basis: will control height; */
+            }
+            #item-3{
+                /* Flex Properties for a flex-items */
+                /* padding: 5px auto; */
+                /* order: 2; */
+
+                
+                /* There is the short-cut key to make the flex give the all of the three command togetherly as given below */
+                /* As given below in flex property we gave there as 
+                flex: grow shrink basis */
+                /* flex: 2 2 220px; */
+
+
+                /* Here we saw one more thing and that is align-self where we can make the item in center by appling below showing center commands and evenly we can send the item box in start and end by appling the below given property */
+                align-self: center;
+
+            }
+        </style>
+</head>
+<body>
+        <h1>This is the Flex-box Tutorial</h1>
+        <div class="container">
+            <div class="item" id="item-1">First Box</div>
+            <div class="item" id="item-2">Seacond Box</div>
+            <div class="item" id="item-3">Third Box</div>
+            <!-- <div class="item" id="item-4">Fourth Box</div>
+            <div class="item" id="item-5">Fifth Box</div>
+            <div class="item" id="item-6">Sixth Box</div> -->
+        </div>
+</body>
+</html>

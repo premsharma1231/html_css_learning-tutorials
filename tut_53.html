@@ -1,0 +1,67 @@
+<!-- This all written below are the JAVA script as string functions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+<!-- Here this is the String Functions tutorial -->
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+    </div>
+    <script>
+        // As the latest version of Javascript says that you don't have to use var as to define or clarify the variable ..
+        var str = "This is a string";
+        console.log(str);
+        
+        // Index of function is used to print the first occurence of the give word in the strings
+        // First occurence of a sub-string.
+        var position = str.indexOf('is');
+        console.log(position);
+        
+        // Last occurence of a sub-string
+        // lastIndexOf always locate the last occurence
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Sub-string from a string .
+        // This slice function is used give the output of a string , as a user wanted output and you will .
+        // As this all index is always starts from zero .
+        // substr = str.slice(0, 6);
+        // substr = str.substring(0,6);
+        // This substring formula give the length means print words from 0 to length 7
+        substr = str.substr(0,7);
+        console.log(substr);
+
+        // This is replaced attribute which is used to replace the existed string 
+        replaced = str.replace('This is a string' , 'This is no longer a normal string now this is a bhosdi vali string' );
+        // console.log(str);
+        console.log(replaced);
+
+        // This is used to convert the string in uppercase means in capital letter
+        // console.log(replaced.toUpperCase());
+        // This is used to convert the string in uppercase means in capital letter
+        // console.log(replaced.toLowerCase());
+
+        // This is a different function to add the two strings 
+        newString = str.concat('Ek or bhosdi vali string');
+        console.log(newString);
+
+        // Here this is the function which is used to trim the white spaces
+        replacedWithWhiteSpaces = "     This contains      some    white   spaces   "
+        console.log(replacedWithWhiteSpaces);
+        // So the trim function is used to delete the white spaces from starting and from end and it will make the spaces to remain in between it will not delete the space of between them  .
+        console.log(replacedWithWhiteSpaces.trim());
+
+
+        // Now lets see how to extract the characters from an string follow the rules and functions written below 
+        // It will print the number which belongs to the position 5 at the string named replaced
+        // char3 = replaced.charAt(5);  //Not very important
+        // Char code at gives the character code
+        char3 = replaced.charCodeAt(3);  //Not very important
+        console.log(char3);
+    </script>
+</body>
+</html>

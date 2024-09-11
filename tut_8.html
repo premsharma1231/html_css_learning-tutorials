@@ -1,0 +1,88 @@
+<!-- So here we are going to learn about forms in HTML language -->
+<!-- Here we have to start with <form> tag and the whole code for Form will be writeen here -->
+<!-- The Form is used to write with the opening tad of <form> -->
+<!-- The first tag is used to write with the input tag , the inoput tag is used to take input from user to add the value ,
+let me tell you that in input tag there are different types is used are as follow 
+1). first type is used in input in form is text tag or text word 
+2). seacond type is used in is number in this type we only can used to add the 
+3). third type is used to write email to take the input from user so the email type input is used 
+4). fourth type is used to write date , to take the input from used in date as the calendar will open at the time of inputing the date 
+5). Now the different type is used in input is select , select is the totally different tag in form select tag is used to make the options to select , like if you want to buy the car , and when you choose the car you will get an option to choose like in which car you are interested in
+6). In from there are more two types are used like radio and checkbox , when you want to check or tick or choose something like your eligibility if you are eligible or not for the respected form and if you want to make the eligibility status already checked then you have to select then you  have to write as checked in that related checkbox.
+7). In radio type input you will make the selection option in between two or more than two things , so i will give you the example like in gender we all have three options like Male , Female , Others so in this three options you can select one option only 
+8). There are two more tags like reset and submit let me explain you , in submit type input when you properly filled the form then you have to click on submit to submit the form 
+and in reset option when you filled the form unintentionally wrong  than you have to click on reset option to reset the option -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="tut_8.css">
+</head>
+<body>
+    <h1><u><i>This is HTML Forms tutorial</i></u></h1>
+    <form action="backend.php">
+        <div> 
+            <label for="name">Name : </label>
+            <input type="text" name="myName" id="name" > 
+        </div><br>
+        <div>
+            <label for="role">Role : </label>
+            <input type="text" name="myRole" id="role">    
+        </div><br>
+        <div>
+        <div>
+            <label for="birthdate"> Date Of Birth : </label>
+            <input type="date" name="myDOB" id="birthdate">
+        </div><br>
+            <label for="age">Age : </label>       
+            <input type="number" name="myAge" id="age">
+        </div><br>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" name="myEmail" id="email">
+        </div><br>
+        <div>
+            <label for="recruitment">Recruitment For : </label>
+            <select name="myRecruitment" id="recruitment">
+                <option value="None" selected>----NONE----</option>
+                <option value="swiggy">Recruited for SWIGGY</option>
+                <option value="playment">Recruited for PLAYMENT</option>
+                <option value="myntra">Recruited for MYNTRA</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="shift">Select Shift : </label>
+            <select name="myCar" id="shift">
+                <option value="None" selected>----NONE----</option>
+                <option value="PartTime">Part Time Shift in Evening From 6 pm to 12 am</option>
+                <option value="PartTime">Part Time Shift in Evening From 7 pm to 11 pm</option>
+                <option value="FullTime">Full Time Shift in Afternoon From 01 pm to 10 pm</option>
+                <option value="FullTime">Full Time Shift in Evening From 5 pm to 02 am</option>
+                <option value="FullTime">Full Time Shift in Morning From 10 am to 07 pm</option>
+            </select>
+        </div><br>
+        <div>
+        <label for="eligibility">Check Your Eligibility? : </label>
+        <input type="checkbox" name="myEligibity" id="eligibility" >    
+        </div><br>
+        <div>
+        Gender : <label for=male>Male </label> <input type="radio" name="myGender" id="male"> <label for=female>Female </label><input type="radio" name="myGender" id="female"> <label for=others>Others :</label><input type="radio" name="myGender" id="others"> 
+        </div><br>
+        <div>
+        <label for="mytext">Write about yourself : </label>
+        <br> <textarea name="myText" cols="30" rows="10" id="mytext"></textarea>
+        </div><br>
+        <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+        </div><br>
+        <div>
+            <label for="password" class="password">Confirm The Password : </label>
+            <input type="password" name="" id="password">
+        </div>
+    </form>
+</body>
+</html>

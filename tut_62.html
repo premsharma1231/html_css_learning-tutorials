@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date Function</title>
+    <style>
+        * {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        #displayDate {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            /* top: 0px; */
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="displayDate">
+
+        </h1>
+    </div>
+    <script>
+        // This is the simple way to print the Date and time in this 
+        console.log("This is Date and Time Tutorial");
+        // Here to print the simple date object by using the JavaScript you only have to print this
+        // function display(){
+        //     date = new Date();
+        //     console.log(date);
+        //     document.getElementById('displayDate').innerHTML = date; 
+        // }
+        // By using setInterval it means you can use the function after every one seacond and after every one seacond it will refresh itself
+        // setInterval(display,1000);
+
+        // If you gives the Date variable 0 then you will get any other date
+        // By defining the Date objective you only can print this simple date format then you can also style it by any other way
+        // let dt = new Date();
+        // console.log(dt);
+
+        // let newDate = new Date("2023-11-30");
+        // console.log(newDate);
+
+        // let newDate = new Date(year , month , date , hours , minute , seacond);
+
+        // let newDate = new Date();
+        // console.log(newDate);
+
+
+        // let newDate = new Date();
+        // newDate = setMinutes(11);
+        // console.log(newDate);
+        // let year = newDate.getFullYear();
+        // let month = newDate.getMonth();
+        // let date = newDate.getDate();
+        // console.log(date + "/" + (month+1) + "/" + year );
+
+        // setInterval(tarikese,1000);
+
+        function updateTime() {
+            displayDate.innerHTML = new Date();
+            console.log(displayDate);
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container" id="container">
+        This is an Arrow Function Tutorial
+    </div>
+    <h1 id="heading">
+        This is an Heading we are using for heading container
+    </h1>
+
+
+    <script>
+        // container = document.getElementById('container');
+        // console.log(container);
+        // This is the an Arrow function Tutorial
+        // Arrow Function
+        // function greet(){
+        //     console.log("Good Morning");
+        // }
+        // greet();
+        // Let's see how to write the same function in Shortcut and in ShortForm by Using An Arrow
+        // Arrow Function which give us shortcut 
+        // greet = ()=>{
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+        // As you can see i wrote this function inside the setTimeout Function to run this function after 3 seacond or after whatever seacond you want
+        setTimeout(() => {
+            console.log("Good Morning ladies and Gentleman");
+        }, 3000);
+
+
+        // This is the simple way for me to make this for the 
+        let sum = (a,b)=>{
+            // As here we are taking the return the value in the form of multiplication
+            return a * b;
+        };
+        // console.log(return);
+        
+        // Here the JavaScript God Made a shortcut ka bhi shortcut for this code 
+        // This function is also running
+        let sum2 = (a,b)=> a+b;
+        // Chalo shortcut k shortcut ka bhi shortcut bna te hain
+        // This shortcut function is also successful and easy
+        let half = a => a/2;
+
+        // When we print the name by using the shortcut
+        let greet = () => console.log("Good Morning");  
+
+        let obj1 = {
+            names: ['Prem','Harry','Yash','Gajendra'],
+            speak(){
+                this.names.forEach((student) => {
+                    console.log("Kukdoo Koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+        // This is the simple function program
+        let obj2 = {
+            languages : ['HTML' , 'Python' , 'C and C++' , 'JavaScript'],
+            bhonk(){
+                this.languages.forEach((kalyanam) => {
+                    console.log("Chala Jaa Bhosdike" + kalyanam);
+                });
+            }
+        }
+        obj2.bhonk();
+    </script>
+</body>
+</html>

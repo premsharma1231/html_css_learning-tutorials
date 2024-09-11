@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform property</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: black;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: chocolate;
+            border: 2px solid none;
+            border-radius: 8px;
+            height: 50px;
+            width: 50px;
+            animation: prem;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse;    */
+        }
+        @keyframes prem {
+            0%{
+                transform: rotate(90deg);
+                /* border-radius: 25px; */
+            }
+            25%{
+                background-color: cadetblue;
+                transform: rotate(180deg);
+                /* width: 100px;
+                height: 100px; */
+                border-radius: 8px;
+            }
+            50%{
+                background-color: burlywood;
+                transform: rotate(270deg);
+                /* width: 50px;
+                height: 50px; */
+                /* border-radius: 25px; */
+            }
+            75%{
+                background-color: aliceblue;
+                transform: rotate(360deg);
+                /* height: 100px;
+                width: 100px; */
+                border-radius: 8px;
+            }
+            100%{
+                background-color: darkolivegreen;
+                transform: rotate(450deg);
+                /* width: 50px;
+                height: 50px; */
+                /* border-radius: 25px; */
+            }
+        }
+    
+        
+/*         
+        .box:hover{
+            transform: rotate(1360deg);
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- So in tutorial 7, we are going to learn about how to make or create list and table in HTML web development -->
+<!-- lets see about how to make lists first -->
+<!-- There are two types of lists are as follow -->
+<!-- <ul> list </ul> Here ul = unordered list , there is a sub code for ul is <li> list </li> , There are three symbols in unordered lists are i)circle , ii)square iii)disk-->
+<!-- <ol> list </ol> Here ol = ordered list , there is also a sub attribute use in ol is <li> list </li> , There are different symbols in ordered list are as follow (i , 1 , I , a , A) , this are the types of symbols in ordered list -->
+<!-- You can even modify the list in different texts and font sizes with using CSS , bold and italic -->
+<!-- Now lets learn about how to make Tables -->
+<!-- There is a tag to start the table is <table> </table> -->
+<!-- The <table></table> tag is used where the table starts , in HTML5 where there are two more tags in table are as follows firsat one is thead and seacond one is tbody -->
+    <!-- <table>
+            <thead>
+                <tr>
+                    <th> Table writing </th>               
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Table Writing </td> 
+                </tr>
+            </tbody>
+        </tsble>
+    So here i want to tell you that , we can style the table in different style by using HTML even and even by using the CSS language 
+So here is showed that how to write the code for the table in HTML language -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+    <style>
+        .table{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lists -->
+    <h1>Lists</h1>
+    <h3><ul type="circle"> <!--Here ul = unordered list-->
+        <li>This is my first unordered list</li>
+        <h5><ol type="i">
+            <li>This is my first ordered list</li> <!-- li = list -->
+            <li>This is my seacond ordered list</li>
+            <li>This is my third ordered list</li></h5>
+        </ol>    <!-- ol = Ordered lists-->
+        <li>This is my seacond unordered list</li>
+        <li>This is my third unordered list</li>
+    </ul>
+    <h3><ol type="i">
+        <li>This is my first ordered list</li>
+        <li>This is my seacond ordered list</li>
+        <li>This is my third ordered list</li>
+    </ol> 
+     <!-- Tables -->
+     <h1><table class="table"> <!-- Table is an opening tag to write tables and rows-->
+     <thead> <!-- thead = Table heading -->
+        <tr> <!-- tr = table row -->
+            <th>Name</th>     <!-- th means attributes under table heading -->
+            <th>Employee ID</th> 
+            <th>Work</th>
+            <th>Age</th>
+        </tr>
+     </thead>   <!-- this is an closing tag for table head as </thead> -->
+     <tbody>    <!-- This is the opening tag for tbody as table body-->
+        <tr>
+            <td>Purvish</td>
+            <td>FSI/UDZ/6145</td>
+            <td>Agent</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Karan</td>
+            <td>FSI/UDZ/6142</td>
+            <td>Agent</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Nikendra</td>
+            <td>FSI/UDZ/5988</td>
+            <td>Agent</td>
+            <td>20</td>
+        </tr>
+    </tbody> <!-- this is the closing tag for table body -->
+</table></h1>
+</body>
+</htm

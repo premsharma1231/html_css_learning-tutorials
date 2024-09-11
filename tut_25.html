@@ -1,0 +1,58 @@
+<!-- This is the tutorial regarding positions there are different types of position -->
+<!--positions - sticky 
+    positions - relative 
+    positions - fixed 
+    positions - absolute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid rgb(0, 0, 0);
+            background-color: cornflowerblue;
+            height: 15000px;
+        }
+        .box{
+            border: solid 2px rgb(92, 0, 0);
+            width: 150px;
+            height: 150px;
+            margin-top: 4px;
+            display: inline-block;
+            /* margin: auto; */
+            /* position: center center; */
+        }
+        #box1{
+                position: sticky;
+                right: 2px;
+                top: 3px;
+        }
+        #box2{ 
+            position: relative;
+            top: 8px;
+        }
+        #box3{
+            position: fixed;
+            bottom: 4px;
+            right: 22px;
+        }
+        #box4{ 
+            /* position: relative;
+            top: 40px; */
+            position: absolute;
+            top: 400px;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">Chat with us </div>
+            <div class="box" id="box4">4</div>
+        </div>
+</body>
+</html>

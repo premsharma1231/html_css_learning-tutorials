@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.port": 5501,
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    "editor.cursorBlinking": "smooth",
+    "hamburger.enable": true
+}

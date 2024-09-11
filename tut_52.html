@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Strings and String Methods</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum reprehenderit dolorum, facilis ea quo animi
+            veritatis, doloribus labore dolorem voluptatibus eius voluptate nemo voluptas magnam.</p>
+    </div>
+    <script>
+        var string = 'Prem';
+        var name = "Sharma";
+        var channel = "PremTheCoder";
+        // Here in temp string you can see i made the four strings and inserted them in one string by using the different method of the 
+        var temp = `${string} ${name} is a "youtuber" and had a "channel" named ${channel}`;
+        var message = "is a good boy";
+        // console.log(string + name + message);
+        console.log(temp);
+
+        // The very simple way to calculate the length of any character or string
+        // by giving string.length to any string and making it print will give you the output for the length in numbers
+        // As we learned in c and c++ language that \n is used for new line character and \t is used to give tab level space between them and if you want to print \n in string you have to write \\n to make it print
+        var namelength = name.length;
+        var channellength = channel.length;
+        console.log(`Length of name is ${namelength} and the length of channel is ${channellength}`);
+
+        // This is a new way to make the string through constructor
+        var y=new String("This");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = "<h1> This is an Heading </h1>" 
+        </script>
+</body>
+</html>

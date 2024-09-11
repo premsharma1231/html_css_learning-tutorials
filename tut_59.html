@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is DOM manipulation</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact-Us</li>
+            <li>More_about_us</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // Here We are learning that how to access the HTML by JavaScript
+        
+        // This is to get an access for id
+        //let main = document.getElementById('main');
+        //console.log(main);
+        //let nav = document.getElementById('nav');
+        //console.log(nav);
+
+        // This is to get an access over classes in HTML
+        //let containers = document.getElementsByClassName('container');
+        //console.log(containers);
+
+        // // And this is an simple query selector to select anything independently as describing it as query
+        // let sel = document.querySelector('.container');
+        // console.log("selector returns this by using the query selector", sel);
+
+        // And this is one more work make easy system by using the query selectors all let's see the below code 
+        // querySelectorAll is used to select multiple querys with relatedly shown  
+        // by using this nav>li symbol you can select the whole website
+        let sel = document.querySelectorAll('#nav>li')
+        console.log("This is all based on querySelectorAll Statement" , sel);
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!-- Here in this tutorial we learned about grid-template-areas which is used to set the  -->
+<!-- Here we used to distribute the boxes in different type fr unit , and here we have to describe the id's in as grid-area with describing the name as you can see below -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid</title>
+    <style>
+        *{
+            margin: 3px;
+            /* padding: 100px; */
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* display: grid; */
+            /* grid-gap: 1rem; */
+            /* grid-row-gap: 5rem; */
+            /* grid-column-gap: 5rem; */
+            /* grid-template-areas: 
+            'navbar navbar navbar'
+            'section section-1 section-2'
+            'aside aside aside'
+            'footer footer footer'
+            ; */
+        }
+        .item{
+            background-color: burlywood;
+            border: 2px solid black;
+            padding: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #section-1{
+            grid-area: section-1;
+        }
+        #section-2{
+            grid-area: section-2;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        } */
+        /* @media only screen and (max-width:800px) {
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer'
+                ;
+            }
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="item" id="navbar">
+       ia itaque sint. Inventore facilis iste quasi? Assumenda, aliquid eligendi. Eligendi ea est praesentium aperiam cum ipsa reiciendis eos perferendis possimus laudantium, ducimus cumque iusto doloremque, laborum veritatis consequuntur et repellat, eveniet tempore quod quaerat. Nobis quos dolores dolorum error corporis vitae voluptatum voluptas sint, cumque enim tempore molestiae repellendus quod nulla ut. Similique sapiente incidunt quas dignissimos vero dolor. Blanditiis iure iusto amet, distinctio recusandae ullam at suscipit illo, rem incidunt odio veritatis! Veniam, ad. Ipsam, itaque ab? Facere exercitationem molestiae esse cupiditate, expedita eos placeat, voluptatibus quo officiis provident dignissimos pariatur temporibus? Perspiciatis iste voluptatem, iure nam obcaecati eum minus nobis voluptates debitis sed numquam cupiditate sint repudiandae reprehenderit dolorum alias neque. Ipsa provident eos est natus repudiandae vero? Hic, vel.
+    </div>
+    <div class="container">
+        <div class="item" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus earum officiis sequi maiores aliquid numquam ab placeat veritatis itaque accusamus praesentium dolore nihil eos dignissimos suscipit. Tempora aut ut sed adipisci impedit corporis dolorem quia eaque pariatur itaque. Alias architecto neque necessitatibus dolores enim praesentium impedit doloremque accusamus earum. Sit quo, adipisci aliquid suscipit alias eaque ut odit sapiente harum consequatur ullam asperiores rem labore quisquam repellendus minima!
+        </div>
+        <div class="item" id="section-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus earum officiis sequi maiores aliquid numquam ab placeat veritatis itaque accusamus praesentium dolore nihil eos dignissimos suscipit. Tempora aut ut sed adipisci impedit corporis dolorem quia eaque pariatur itaque. Alias architecto neque necessitatibus dolores enim praesentium impedit doloremque accusamus earum. Sit quo, adipisci aliquid suscipit alias eaque ut odit sapiente harum consequatur ullam asperiores rem labore quisquam repellendus minima!
+        </div>
+        <div class="item" id="section-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus earum officiis sequi maiores aliquid numquam ab placeat veritatis itaque accusamus praesentium dolore nihil eos dignissimos suscipit. Tempora aut ut sed adipisci impedit corporis dolorem quia eaque pariatur itaque. Alias architecto neque necessitatibus dolores enim praesentium impedit doloremque accusamus earum. Sit quo, adipisci aliquid suscipit alias eaque ut odit sapiente harum consequatur ullam asperiores rem labore quisquam repellendus minima!
+
+        <!-- <div class="item" id="aside">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, tempora? Repudiandae architecto ad sed ab perspiciatis, necessitatibus, deserunt, impedit culpa explicabo quae 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, exercitationem doloremque fugit, omnis amet recusandae consectetur animi rerum doloribus error molestias porro facilis voluptate? Eum omnis ex voluptatem aliquid temporibus sit, eos harum atque eius neque molestias quis, exercitationem a facilis tempore, eligendi voluptates unde totam velit! Voluptatum illo sit animi voluptas dolorum ipsa a quia quas cum laudantium, aperiam, ducimus pariatur sed alias, praesentium dolore quibusdam adipisci odit nostrum dolorem quos quisquam magnam omnis reiciendis! Non, repudiandae consequatur voluptatum, et magnam nemo tempore iure fugiat consequuntur necessitatibus voluptatem ut recusandae rerum numquam, eveniet esse! Voluptas molestias quibusdam assumenda repellat!
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto non rerum dolores nostrum cum sed accusantium exercitationem, asperiores in ipsa ullam? Consequuntur nihil cumque eius libero assumenda aperiam cupiditate quod maiores ad dolores iure soluta veritatis quo quidem provident iusto similique fugiat animi, veniam adipisci laudantium ducimus corporis quasi! Soluta, necessitatibus debitis! Voluptas deleniti perferendis ducimus dolores, non nihil quia inventore voluptates totam minus. Assumenda debitis tenetur voluptate deleniti quisquam, ullam voluptates tempora. Tempora aspernatur laudantium ad, voluptatum similique dolores necessitatibus reiciendis corrupti quidem quia labore odio delectus debitis id saepe blanditiis! Culpa quas illo alias natus, quos quaerat? Ex.
+        </div> -->
+    </div>
+</body>
+</html>

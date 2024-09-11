@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        // string1 = "This is a String";
+        // string1 = "This is a String2";  //If you over-write some string variable so i will count the over-writeen-d value ..
+        // console.log(string1);
+
+        // Here i am using let function.. 
+        // Let is a way to declare the variables..
+        //  let a = 15; // Here you can see that you can declare the let integer only once when if you overwrite it , then you will see the error about that you already declared..
+        // From now we will not use this var to declare the variables but from now we will use let
+        // If you want to redeclare the value of a and to change the value u have to write the changed value inside the curly phrases . 
+        // let a = 12;
+        // {
+        //     a=15;
+        //     log
+        // }
+        
+        // In const you cannot overwrite the variable..
+        // const a = ("This is a constant this cannot be changed");
+        // console.log(a);
+        // a = ("I already know this cannot be changed but still trying");
+        
+
+        // Here I am making the number is divisible by which number
+        // console.log("This is the Program to see the entered number is divisible by which number");
+        // let numbera = prompt("Enter Number a");
+        // fortwo = numbera % 2; // For 2.. 
+        // forthree = numbera % 3; // For 3.. 
+        // forfour = numbera % 4; // For 4.. 
+        // forfive = numbera % 5; // For 5.. 
+        // forsix = numbera % 6; // For 6.. 
+        // forseven = numbera % 7; // For 7.. 
+        // foreight = numbera % 8; // For 8.. 
+        // fornine = numbera % 9; // For 9.. 
+        // forten = numbera % 10; // For 10.. 
+        // fortwoandthree = fortwo + forthree ; // For 2 and 3
+        // fortwoandfour = fortwo + foreight ; // For 2 and 4
+        // fortwoandfive = fortwo + forfive ;  // For 2 and 5
+        // fortwoandten = fortwo + forten ;  // For 2 and 10
+        // fortwofourfiveten = fortwo + forfour + forfive + forten ; //For 2 , 4 , 5 and 10 
+        // fortwothreefour = forfour + fortwo + forthree; //For 2 , 3 and 4
+        // fortwofiveten = fortwo + forfive + forten;  // For 2 , 5 and 10
+        // fortwothreefiveten = fortwo + forthree + forfive + forten; //For 2 , 3 , 5 and 10
+        // forthreefive = forthree + forfive; // For 3 and 5
+        // forthreenine = forthree + fornine; //For 3 and 9
+        // fortwothreefourfiveten = fortwothreefiveten + fortwofourfiveten ;
+        // fortwothreefoursix = fortwothreefour + forsix ; //For 2, 3 , 4 , and 6
+        // fortwothreesix = fortwoandthree + forsix ; //For 2 , 3 , 4 and 6
+        // fortwothreefoursixeight = fortwothreefoursix + foreight ; //For 2 , 3 , 4 , 6 and 8
+        // fortwofoureight = fortwoandfour + foreight ; //For 2 , 4 and 8
+
+        // // Appling If and Else to see the number is actually divisible by what integers
+        // if(fortwothreefourfiveten==0){
+        //     console.log("Entered Number Is Divisible By 2 , 3 , 4 , 5 and 10");
+        // }
+        // else if(fortwothreefoursixeight==0){
+        //     console.log("Entered Number Is Divisible By 2 , 3 , 4 , 6 and 8");
+        // }
+        // else if(fortwothreefiveten==0){
+        //     console.log("Entered Number Is Divisible By 2 , 3 , 5 and 10");
+        // }
+        // else if(fortwofourfiveten==0){
+        //     console.log("Entered Number Is Divisible By 2 , 4 , 5 and 10");
+        // }
+        // else if(fortwothreefoursix==0){
+        //     console.log("Entered Number Is Divisible By 2 , 3 , 4 and 6");
+        // }
+        // else if(fortwofoureight==0){
+        //     console.log("Entered Number Is Divisible By 2 , 4 and 8");
+        // }
+        // else if(fortwothreesix==0){
+        //     console.log("Entered Number Is Divisible By 2 , 3 and 6");
+        // }
+        // else if(fortwofiveten==0){
+        //     console.log("Entered Number Is Divisible By 2 , 5 and 10");
+        // }
+        // else if(fortwothreefour==0){
+        //     console.log("Entered Number Is Divisible By 2 , 3 and 4");
+        // }
+        // else if (fortwoandthree==0){
+        //     console.log("Entered Number Is Divisible By 2 and 3");
+        // }
+        // else if (forthreefive==0){
+        //     console.log("Entered Number Is Divisible By 3 and 5");
+        // }
+        // else if (forthreenine==0){
+        //     console.log("Entered Number Is Divisible By 3 and 9");
+        // }
+        // else if(fortwoandten==0){
+        //     console.log("Entered Number is Divisible By 2 and 10");
+        // }
+        // else if(fortwoandfive==0){
+        //     console.log("Entered Number Is Divisible By 2 and 5");
+        // }
+        // else if(fortwoandfour==0){
+        //     console.log("Entered Number Is Divisible By 2 and 4");
+        // }
+        // else if(fortwo==0){
+        //     console.log("Entered Number Is Only Divisible By 2");
+        // }
+        // else if(forthree==0){
+        //     console.log("Entered Number Is Only Divisible By 3");
+        // }
+        // else if(forfour==0){
+        //     console.log("Entered Number Is Only Divisible By 4");
+        // }
+        // else if(forfive==0){
+        //     console.log("Entered Number Is Only Divisible By 5");
+        // } 
+        // else if(forsix==0){
+        //     console.log("Entered Number Is Only Divisible By 6");
+        // }
+        // else if(forseven==0){
+        //     console.log("Entered Number Is Only Divisible By 7");
+        // }
+        // else if(foreight==0){
+        //     console.log("Entered Number Is Only Divisible By 8");
+        // }
+        // else if(fornine==0){
+        //     console.log("Entered Number Is Only Divisible By 9");
+        // }
+        // else if(forten==0){
+        //     console.log("Entered Number Is Only Divisible By 10");
+        // }
+        // else{
+        //     console.log("Invalid Input");
+        // }
+
+
+        // Here I am Trying the switch case program to run
+        // Writing the program to find square , cube , and 4th time of the entered number 
+        // number1 = prompt("Enter The Number")
+        // console.log("To find the square click 2");
+        // console.log("To find the cube click 3");
+        // console.log("To find the fourth-time click 4");
+        // let operand = prompt("Select Square , Cube , Fourth Time of Entered Number")
+        //     switch (operand) {
+        //         case '2':
+        //             console.log("Square of " + number1 + " is = " ,+ (number1 * number1) );
+        //             break;
+            
+        //         case '3':
+        //             console.log("Cube of " + number1 + " is = " ,+ (number1 * number1 * number1 ) );
+        //             break;
+            
+        //         case '4':
+        //             console.log("Fourth Times of " + number1 + " is = " ,+ (number1 * number1 * number1 * number1) );
+        //             break;
+            
+        //         default:    
+        //             console.log("Invalid Input");
+        //             break;
+        //     }
+
+        numbera = prompt("Enter Number A");
+        operand = prompt("Select '*' , '/' , '-' , '+'");
+        numberb = prompt("Enter Number B");
+        add = numbera + numberb;
+        multiplication = numbera * numberb;
+        division = numbera / numberb;
+        substraction = numbera - numberb;
+        switch (operand) {
+            case '+':
+                console.log(numbera + '+' + numberb + ' = ' + add );
+                break;
+            case '-':
+                console.log(numbera + '-' + numberb + ' = ' + substraction );
+                break;
+            case '*':
+                console.log(numbera + '*' + numberb  +  " = " + multiplication );
+                break;
+            case '/':
+                console.log(numbera + '/' + numberb + ' = ' + division);
+                break;
+        
+            default:
+                console.log("Wrong Action Performed");
+                break;
+        }
+        
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- This tutorial is about the color so the background color , border color , and font color the tutorial is covered for all the types of cover , the method of using the color is same for all -->
+<!-- In this tutorial we are going to learn about the colour in WEB DEVELOPMENT with CSS 
+    There are three different types to add the colour in HTML with css 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+    <style>
+        /* 1). First is simple colour tag which is written as color: black; in this way with simply colour name */
+        #firstPara{
+                color: black;
+                font-size: 33px;
+                font-family: cursive
+        /* This is the seacond method to add the color as this method is known as  rgb method rgb means RED GREEN BLUE and we add the quantity in numbers to transfer the value of both of three and make the mixture od both the three colors */
+        }
+        #seacondPara{
+                color: rgb(112, 20, 50);
+                font-size: 33px;
+                font-family: cursive
+        }
+        #thirdPara{
+                color: #000000;
+                font-size: 33px;
+                font-family: cursive;
+        }
+        /* As this is the third method to add the color in html by CSS as this is the # method that in this method the value of the color is already defined in internet and webdevelopment so we just to add the value with just # as i want to add the red color the value of red color is #ff0000 so in color tag we just have to write the #ff0000 to go with the re color  */
+        span{
+                color: #3C8F84;
+                font-size: 35px;
+                font-style: italic , bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my <span>first</span> box</h1>
+    <p id="firstPara">This is a paragraph from <span>first</span> box</p>
+    
+    <h1>This is my <span>seacond</span> box</h1>
+    <p id="seacondPara">This is a paragraph from <span>seacond</span> box</p>
+    
+    <h1>This is my <span>third</span> box</h1>
+    <p id="thirdPara">This is a paragraph from <span>third</span> box</p>
+</body>
+</html>

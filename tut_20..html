@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        .container{
+            background-color: #6b6b6b;;
+            border: 5px solid rgb(59 0 0);
+            padding: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            border-radius: 25px;
+            width: 235px;
+            height: fit-content;
+            box-sizing: border-box;
+            /* padding: 25px;
+            margin: 40px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="https://www.simplilearn.com/tutorials/css-tutorial/css-box-model" target="_blank">Image for the box model</a> -->
+     <div class="container">
+        <h1>This is my heading</h1>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates aperiam necessitatibus consequatur eligendi! Nihil iure porro tenetur voluptatum sequi nam exercitationem qui numquam ducimus?</p>
+     </div>
+
+     <div class="container">
+        <h1>This is my heading</h1>
+        <p id="seacond">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates aperiam necessitatibus consequatur eligendi! Nihil iure porro tenetur voluptatum sequi nam exercitationem qui numquam ducimus?</p>
+     </div>
+
+     <div class="container">
+        <h1>This is my heading</h1>
+        <p id="third"> 
+            <label for="myCars">Select Cars : </label>
+            <select name="myCars" id="swift">
+            <option value="none">None</option>
+            <option value="swt">Swift</option>
+            <option value="audi">Audi</option>
+        </select><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates aperiam necessitatibus consequatur eligendi! Nihil iure porro tenetur voluptatum sequi nam exercitationem qui numquam ducimus?</p>
+     </div>
+</body>
+</html>
